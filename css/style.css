@@ -1,0 +1,49 @@
+.nav a{
+	
+	color: white;font-family: "Open Sans";font-weight: 800;font-size: 20px;
+	
+}
+
+#navbar-text-white{
+	color:;
+}
+
+#top-styles{
+	background: url("../img/pozadina.gif");
+}
+
+.text-big	{color: white;font-family: "Open Sans";font-weight: 800;font-size: 80px;}
+
+.gifest-underline{border-bottom: 2px solid white;}
+
+li{
+	list-style: none;
+}
+.middle-content{
+	font-family: Oswald;
+}
+
+.authors li:hover
+{
+	background-color: red;
+}
+
+.authors li{
+	font-family: Oswald;
+	font-size: 20px;
+}
+
+.friends{
+	border:3px dotted black;
+	
+}
+
+.friends li{
+	font-family: 'Lobster', cursive;
+	font-size: 16px;
+}
+
+.more{
+	padding: 10px;
+	border:1px solid black;
+}
