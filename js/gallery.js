@@ -34,12 +34,7 @@ $("li").click("trip",function(trip)
 }
 )
 change = 0;
-$(".glyphicon-chevron-right").click(function(){change=change+1;
-		$("img").remove();
-		var imageFormatted = '<div class="col-md-6"><img class="img-responsive" src="'+authors[gdesmo][change]+'"></div>';
-		$(".da").append(imageFormatted);
-		});
-$(".glyphicon-chevron-left").click(function(){change=change-1;
+$(".more").click(function(){if(change==authors[gdesmo].length-1){change=0;};	change=change+1;
 		$("img").remove();
 		var imageFormatted = '<div class="col-md-6"><img class="img-responsive" src="'+authors[gdesmo][change]+'"></div>';
 		$(".da").append(imageFormatted);
