@@ -19,13 +19,28 @@ $(".authors").append("<li val="+'items'+">"+items+"</li>");
 $("li").click("trip",function(trip)
 {
 	$("img").remove();
-	var gdesmo = trip.currentTarget.innerText;
-	for(items in authors[gdesmo])
+	gdesmo = trip.currentTarget.innerText;
+	
 
-	{	
-
-		var imageFormatted = '<div class="col-md-6"><img class="img-responsive" src="'+authors[gdesmo][items]+'"></div>';
+		
+		var imageFormatted = '<div class="col-md-6"><img class="img-responsive" src="'+authors[gdesmo][0]+'"></div>';
 		$(".da").append(imageFormatted);
-	}
+		
+
+	
+		
+		
+
 }
 )
+change = 0;
+$(".glyphicon-chevron-right").click(function(){change=change+1;
+		$("img").remove();
+		var imageFormatted = '<div class="col-md-6"><img class="img-responsive" src="'+authors[gdesmo][change]+'"></div>';
+		$(".da").append(imageFormatted);
+		});
+$(".glyphicon-chevron-left").click(function(){change=change-1;
+		$("img").remove();
+		var imageFormatted = '<div class="col-md-6"><img class="img-responsive" src="'+authors[gdesmo][change]+'"></div>';
+		$(".da").append(imageFormatted);
+		});
