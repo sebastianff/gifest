@@ -14,7 +14,7 @@
 
 .text-big	{color: white;font-family: "Open Sans";font-weight: 800;font-size: 80px;}
 
-.gifest-underline{border-bottom: 2px solid white;}
+
 
 li{
 	list-style: none;
@@ -25,16 +25,17 @@ li{
 
 .authors li:hover
 {
-	background-color: red;
+	background-color: #fb006a;
 }
 
 .authors li{
 	font-family: Oswald;
 	font-size: 20px;
+	border:1px dotted black;
 }
 
 .friends{
-	border:3px dotted black;
+	border:2px dotted black;
 	
 }
 
@@ -46,4 +47,21 @@ li{
 .more{
 	padding: 10px;
 	border:1px solid black;
+}
+
+.col-md-offset-5{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+
+.da{
+	overflow: auto;
+
+}
+
+.da img{
+	height: auto;
+	width: auto;
 }

@@ -1,9 +1,16 @@
 var authors = 
 {
-	"Adrijan Karavdic":["http://i.imgur.com/RAM3R1I.gif","http://i.imgur.com/iXU32nG.gif","http://i.imgur.com/3DEk9e3.gif","http://i.imgur.com/kcQ1WPM.gif"],
-	"Nebojsa Gelevski":["http://i.imgur.com/pV7GGNA.gif","http://i.imgur.com/0R2FHEN.gif","http://i.imgur.com/d6IySHU.gif"],
-	"Tilen Sepic":["http://i.imgur.com/800G0oH.gif","http://i.imgur.com/XzwWxbZ.gif","http://i.imgur.com/247S5tW.gif","http://i.imgur.com/BLRM3x2.gif"]
-
+	"Adrijan Karavdic":["cJESS"],
+	"Nebojsa Gelevski":["23Rrq"],
+	"Tilen Sepic":["NeOu1"],
+	"Primoz Zorko":["tYRe0"],
+	"Zlata VK":["9XR0q"],
+	"Zelmira Mikljan":["rOLQr"],
+	"":[""],
+	"":[""],
+	"":[""],
+	"":[""],
+	
 }
 
 
@@ -18,12 +25,12 @@ $(".authors").append("<li val="+'items'+">"+items+"</li>");
 //$("li").click("trip",function(trip){console.log(trip.currentTarget.innerText);})
 $("li").click("trip",function(trip)
 {
-	$("img").remove();
+	$("#test").remove();
 	gdesmo = trip.currentTarget.innerText;
 	
 
 		
-		var imageFormatted = '<div class="col-md-6"><img class="img-responsive" src="'+authors[gdesmo][0]+'"></div>';
+		var imageFormatted = '<div id="test"><blockquote class="imgur-embed-pub" lang="en" data-id="a/'+authors[gdesmo][0]+'"><a href="//imgur.com/a/'+authors[gdesmo][0]+'">'+gdesmo+'</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>';
 		$(".da").append(imageFormatted);
 		
 
@@ -33,9 +40,9 @@ $("li").click("trip",function(trip)
 
 }
 )
-change = 0;
-$(".more").click(function(){if(change==authors[gdesmo].length-1){change=0;};	change=change+1;
-		$("img").remove();
-		var imageFormatted = '<div class="col-md-6"><img class="img-responsive" src="'+authors[gdesmo][change]+'"></div>';
-		$(".da").append(imageFormatted);
-		});
+//change = 0;
+//$(".more").click(function(){if(change==authors[gdesmo].length-1){change=0;};	change=change+1;
+		//$("img").remove();
+		//var imageFormatted = '<img src="'+authors[gdesmo][change]+'">';
+		//$(".da").prepend(imageFormatted);
+		//});
