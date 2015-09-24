@@ -4,9 +4,7 @@
 	
 }
 
-#navbar-text-white{
-	color:;
-}
+
 
 #top-styles{
 	background: url("../img/pozadina.gif");
@@ -36,6 +34,7 @@ li{
 
 .friends{
 	border:2px dotted black;
+	margin-bottom: 70px;
 	
 }
 
@@ -68,4 +67,12 @@ li{
 
 .fa-lg{
 	margin: 10px;
+}
+
+.authors,.da{
+	margin-top: 25px;
+}
+
+a:hover{
+	background-color: blue;
 }
